@@ -38,7 +38,7 @@ import com.google.gson.JsonParser;
 
 public class PushUtils 
 {
-	public final static String Salt = "xxxx";
+	public final static String Salt = "wuliangpsDkw_8675.Zz";
 	private final static String appKey = "ac6d111ac6683b3eb22ff701";
 	private final static String masterSecret = "f02ebffb0c59922b354b594c";
 	private static ExecutorService threadPool;
