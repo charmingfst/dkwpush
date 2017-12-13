@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31c5e44-3390-4054-ad7b-f539c60b2dba" name="Default" comment="" />
+    <list default="true" id="a31c5e44-3390-4054-ad7b-f539c60b2dba" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bcx/push/PushUtils.java" afterPath="$PROJECT_DIR$/src/com/bcx/push/PushUtils.java" />
+    </list>
     <ignored path="dkwpush.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,14 +31,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PushUtils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PushUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/bcx/push/PushUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="338" column="12" selection-start-line="338" selection-start-column="12" selection-end-line="338" selection-end-column="12" />
+            <state relative-caret-position="132">
+              <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
               <folding>
-                <marker date="1513147122683" expanded="false" signature="30:1341" ph="..." />
-                <marker date="1513147122683" expanded="true" signature="8223:9291" ph="{...}" />
+                <element signature="e#10886#11411#0" expanded="true" />
+                <element signature="e#11410#11411#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,10 +95,12 @@
       <file leaf-file-name="OtherAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bcx/push/OtherAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="36">
               <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
               <folding>
-                <marker date="1513147117731" expanded="false" signature="30:760" ph="..." />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2001#2557#0" expanded="true" />
+                <element signature="e#2556#2557#0" expanded="true" />
                 <marker date="1513147117731" expanded="false" signature="4409:4415" ph=" { " />
                 <marker date="1513147117731" expanded="false" signature="4427:4430" ph=" }" />
                 <marker date="1513147117731" expanded="false" signature="4462:4468" ph=" { " />
@@ -148,7 +153,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PushUtils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PushUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/wkb/push/PushUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
@@ -177,8 +182,8 @@
         <option value="$PROJECT_DIR$/src/com/bcx/push/task/OtherTask.java" />
         <option value="$PROJECT_DIR$/web/start.jsp" />
         <option value="$PROJECT_DIR$/src/com/bcx/push/OtherAction.java" />
-        <option value="$PROJECT_DIR$/src/com/bcx/push/PushUtils.java" />
         <option value="$PROJECT_DIR$/src/com/wkb/push/PushUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/bcx/push/PushUtils.java" />
       </list>
     </option>
   </component>
@@ -317,6 +322,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dkwpush" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dkwpush" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dkwpush" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dkwpush" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="push" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -880,12 +925,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513143050465</updated>
-      <workItem from="1513143055419" duration="6793000" />
+      <workItem from="1513143055419" duration="8118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6793000" />
+    <option name="totallyTimeSpent" value="8118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1444" height="876" extended-state="0" />
@@ -1081,12 +1126,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wkb/push/PushUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="372" column="4" selection-start-line="372" selection-start-column="4" selection-end-line="372" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bcx/push/OtherAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="36">
           <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
           <folding>
-            <marker date="1513147117731" expanded="false" signature="30:760" ph="..." />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2001#2557#0" expanded="true" />
+            <element signature="e#2556#2557#0" expanded="true" />
             <marker date="1513147117731" expanded="false" signature="4409:4415" ph=" { " />
             <marker date="1513147117731" expanded="false" signature="4427:4430" ph=" }" />
             <marker date="1513147117731" expanded="false" signature="4462:4468" ph=" { " />
@@ -1097,21 +1154,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bcx/push/PushUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="338" column="12" selection-start-line="338" selection-start-column="12" selection-end-line="338" selection-end-column="12" />
+        <state relative-caret-position="132">
+          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
-            <marker date="1513147122683" expanded="false" signature="30:1341" ph="..." />
-            <marker date="1513147122683" expanded="true" signature="8223:9291" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wkb/push/PushUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="372" column="4" selection-start-line="372" selection-start-column="4" selection-end-line="372" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#10886#11411#0" expanded="true" />
+            <element signature="e#11410#11411#0" expanded="true" />
           </folding>
         </state>
       </provider>
