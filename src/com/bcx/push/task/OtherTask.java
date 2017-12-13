@@ -2,14 +2,12 @@ package com.bcx.push.task;
 
 import java.util.Calendar;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Future;
 
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 
 import com.bcx.push.PushUtils;
-import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
