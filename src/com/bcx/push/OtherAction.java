@@ -8,6 +8,7 @@ import java.util.concurrent.Future;
 
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.common.base.Charsets;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -33,6 +34,7 @@ public class OtherAction extends ActionSupport
 	@Override
 	public String execute() throws Exception {
 		HttpServletResponse response = ServletActionContext.getResponse();
+		response.setCharacterEncoding("utf-8");
 		PrintWriter writer = response.getWriter();
 		final int day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 		String jm = PushUtils.jdkSha1(day+"&"+PushUtils.Salt);
@@ -72,11 +74,11 @@ public class OtherAction extends ActionSupport
 					});
 
 				}
-				writer.write("success");
+				writer.write("成功");
 			}else if ("0".equals(result)){
-				writer.write("没有数据");
+				writer.write("无数据");
 			}else {
-				writer.write("失败");
+				writer.write("fail");
 			}
 		} catch (Exception e)
 		{

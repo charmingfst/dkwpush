@@ -119,7 +119,7 @@ public class PushUtils
                         .addPlatformNotification(iosNotification)
                         .addPlatformNotification(AndroidNotification.newBuilder().addExtra("type", type).setAlert(content).build())
                         .build())
-                .setOptions(Options.newBuilder().setApnsProduction(true).build()) //true为生成环境，false为开发环境
+                .setOptions(Options.newBuilder().setApnsProduction(false).build()) //true为生成环境，false为开发环境
                 .build();
     }
 	public static InputStreamReader webServiceHelpWlk(String path){
