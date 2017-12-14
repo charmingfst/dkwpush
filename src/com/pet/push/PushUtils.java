@@ -39,7 +39,7 @@ import com.google.gson.JsonParser;
 
 public class PushUtils 
 {
-	public final static String Salt = "wuliangpsDkw_8675.Zz";
+	public final static String Salt = "xxxx";
 	private final static String appKey = "d5058a2d2e618235f7f6e1f6";
 	private final static String masterSecret = "281c937ab9cb0fa6e2718802";
 	public final static String domain = "www.bellgps.com";
