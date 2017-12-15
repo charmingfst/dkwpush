@@ -187,7 +187,7 @@ public class PushUtils
 //			inputStream = new ByteArrayInputStream(bytes); 
 			
 			String result = new String(bytes, Charsets.UTF_8);
-			System.out.println("result:"+result);
+//			System.out.println("result:"+result);
 			resJson = new JsonParser().parse(result).getAsJsonObject();
 			
 			in.close();
@@ -276,7 +276,7 @@ public class PushUtils
 			while ((readLine = responseReader.readLine()) != null) {   
 				sb.append(readLine).append("\n"); 
 			}
-			System.out.println("response:"+sb);
+//			System.out.println("response:"+sb);
 			responseReader.close();
 			conn.disconnect();
 		}catch(Exception ex)
