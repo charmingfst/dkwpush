@@ -29,7 +29,8 @@
 		<action name="speedpush" class="speedaction"></action>
 		<action name="cardpush" class="cardaction"></action>
 		<action name="switchpush" class="switchaction"></action>
-		
+		<action name="runpush" class="runaction"></action>
+
 		<action name="ndele" class="ndele">
 			<result name="success"></result>
 		</action>
