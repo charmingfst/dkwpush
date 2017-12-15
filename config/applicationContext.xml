@@ -39,7 +39,7 @@
 	<bean id="speedaction" class="com.bcx.push.SpeedingAction" scope="singleton"></bean>
 	<bean id="cardaction" class="com.bcx.push.CardAction"></bean>
 	<bean id="switchaction" class="com.bcx.push.SwitchAction"></bean>
-	
+	<bean id="runaction" class="com.bcx.push.RunAction"></bean>
 	<!-- =============牛丁推送=============== -->
 	<bean id="ndfence" class="com.nd.push.FenceAction" scope="singleton"/>
 	<bean id="ndele"  class="com.nd.push.EleAction" scope="singleton">
