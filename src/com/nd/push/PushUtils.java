@@ -348,7 +348,7 @@ public class PushUtils
 						{
 							// TODO Auto-generated method stub
 							String jm2 = PushUtils.jdkSha1(id+"&"+PushUtils.Salt);
-							String pathback = "http://apiv4.dkwgps.com/Remind/remindUpID";
+							String pathback = "http://apiv6.dkwgps.com/Remind/remindUpID";
 	//						String param = "id="+id+"&jm="+jm2.toUpperCase();
 							JsonObject jsonObj = new JsonObject();
 							jsonObj.addProperty("id", id);
