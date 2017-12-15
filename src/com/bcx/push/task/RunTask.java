@@ -21,7 +21,7 @@ public class RunTask implements Job {
     public void execute(JobExecutionContext jobExecutionContext) throws JobExecutionException {
         final int day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
         String jm = PushUtils.jdkSha1(day + "&" + PushUtils.Salt);
-        String path = "http://apiv6.dkwgps.com/Information/remindXS?jm=" + jm.toUpperCase();
+        String path = "http://apiv6.dkwgps.com/Remind/remindXS?jm=" + jm.toUpperCase();
         JsonObject jsonRes = PushUtils.getInputStreamJson(path);
         ExecutorService executor = PushUtils.getThreadPool();
         try {

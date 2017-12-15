@@ -82,4 +82,14 @@ public class RunAction extends ActionSupport {
         }
         return null;
     }
+
+    public int getFlag()
+    {
+        return flag;
+    }
+
+    public void setFlag(int flag)
+    {
+        this.flag = flag;
+    }
 }
