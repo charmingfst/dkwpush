@@ -194,6 +194,7 @@ public class PushUtils
 			conn.disconnect();
 		} catch (Exception e) {
 			e.printStackTrace();
+			e.getMessage();
 //			System.out.println("wlk请求地址webservice失败 超时。。。。。");
 			return null;
 		}
