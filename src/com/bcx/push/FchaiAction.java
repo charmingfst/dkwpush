@@ -103,13 +103,7 @@ public class FchaiAction extends ActionSupport
 		}
 		if(flag == 2 )
 		{
-			if(scheduler != null&& scheduler.isStarted())
-			{
-//				System.out.println("ele stop");
-				scheduler.clear();
-				scheduler.shutdown();
-				scheduler = null;
-			}
+			closePush();
 		}
 		if(flag == 3)
 		{

@@ -52,12 +52,7 @@ public class RunAction extends ActionSupport {
         }
         if (flag == 2)
         {
-            if (scheduler != null && scheduler.isStarted())
-            {
-                scheduler.clear();
-                scheduler.shutdown();
-                scheduler = null;
-            }
+            closePush();
         }
 
         if(flag == 3)

@@ -56,13 +56,7 @@ public class CardAction extends ActionSupport
 		}
 		if (flag == 2) //停止
 		{
-			if (scheduler != null && scheduler.isStarted())
-			{
-				// System.out.println("expire stop");
-				scheduler.clear();
-				scheduler.shutdown();
-				scheduler = null;
-			}
+			closePush();
 		}
 		if(flag == 3) //返回状态
 		{
