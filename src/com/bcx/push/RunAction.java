@@ -22,7 +22,7 @@ public class RunAction extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
-        System.out.println("flag:"+flag);
+
         if (flag == 0)
         {
             if (scheduler == null

@@ -26,7 +26,6 @@ public class FenceAction extends ActionSupport
 	@Override
 	public String execute() throws Exception
 	{
-		System.out.println("执行了。。。"+flag);
 		// TODO Auto-generated method stub
 		if (flag == 0)
 		{
