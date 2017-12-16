@@ -506,7 +506,7 @@
 </table>
 <script type="text/javascript">
     $("#runstart").click(function () {
-        $.get("runpush?flag=1", function (result) {
+        $.get("runpush?flag=0", function (result) {
 //			alert("start");
             var ele = $("#runstate");
             ele.html("已开启");
@@ -524,7 +524,7 @@
 
     $("#switchstart").click(function () {
 
-        $.get("switchpush?flag=1", function (result) {
+        $.get("switchpush?flag=0", function (result) {
 //			alert("start");
             var ele = $("#switchstate");
             ele.html("已开启");
@@ -541,7 +541,7 @@
     });
     $("#elestart").click(function () {
 
-        $.get("elepush?flag=1", function (result) {
+        $.get("elepush?flag=0", function (result) {
             //			alert("start");
             var ele = $("table tr:first td:last");
             ele.html("已开启");
@@ -558,7 +558,7 @@
     });
     $("#fencestart").click(function () {
 
-        $.get("fencepush?flag=1", function (result) {
+        $.get("fencepush?flag=0", function (result) {
             var elestate = $("#fencestate");
             elestate.html("已开启");
             elestate.css("color", "red");
@@ -573,7 +573,7 @@
     });
 
     $("#balancestart").click(function () {
-        $.get("balancepush?flag=1", function (result) {
+        $.get("balancepush?flag=0", function (result) {
             var elestate = $("#balancestate");
             elestate.html("已开启");
             elestate.css("color", "red");
@@ -587,7 +587,7 @@
         });
     });
     $("#expirestart").click(function () {
-        $.get("expirepush", {flag: 1}, function (result) {
+        $.get("expirepush", {flag: 0}, function (result) {
             var elestate = $("#expirestate");
             elestate.html("已开启");
             elestate.css("color", "red");
@@ -601,7 +601,7 @@
         });
     });
     $("#shakestart").click(function () {
-        $.get("vibratepush", {flag: 1}, function (result) {
+        $.get("vibratepush", {flag: 0}, function (result) {
             var elestate = $("#shakestate");
             elestate.html("已开启");
             elestate.css("color", "red");
@@ -616,7 +616,7 @@
     });
 
     $("#fangcstart").click(function () {
-        $.get("fangcpush", {flag: 1}, function (result) {
+        $.get("fangcpush", {flag: 0}, function (result) {
             var elestate = $("#fangcstate");
             elestate.html("已开启");
             elestate.css("color", "red");
@@ -644,7 +644,7 @@
      });
      });*/
     $("#chargestart").click(function () {
-        $.get("chargepush", {flag: 1}, function (result) {
+        $.get("chargepush", {flag: 0}, function (result) {
             var elestate = $("#chargestate");
             elestate.html("已开启");
             elestate.css("color", "red");
@@ -658,7 +658,7 @@
         });
     });
     $("#lowstart").click(function () {
-        $.get("lowpush", {flag: 1}, function (result) {
+        $.get("lowpush", {flag: 0}, function (result) {
             var elestate = $("#lowstate");
             elestate.html("已开启");
             elestate.css("color", "red");
@@ -673,7 +673,7 @@
     });
     $("#sosstart").click(function () {
 
-        $.get("sospush?flag=1", function (result) {
+        $.get("sospush?flag=0", function (result) {
             var elestate = $("#sosstate");
             elestate.html("已开启");
             elestate.css("color", "red");
@@ -688,7 +688,7 @@
     });
     $("#speedstart").click(function () {
 
-        $.get("speedpush?flag=1", function (result) {
+        $.get("speedpush?flag=0", function (result) {
             var elestate = $("#speedstate");
             elestate.html("已开启");
             elestate.css("color", "red");
@@ -703,7 +703,7 @@
     });
     $("#cardstart").click(function () {
 
-        $.get("cardpush?flag=1", function (result) {
+        $.get("cardpush?flag=0", function (result) {
             var elestate = $("#cardstate");
             elestate.html("已开启");
             elestate.css("color", "red");

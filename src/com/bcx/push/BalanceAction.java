@@ -26,7 +26,7 @@ public class BalanceAction extends ActionSupport
 	@Override
 	public String execute() throws Exception
 	{
-		if (flag == 1)
+		if (flag == 0)
 		{
 			int count = 0;
 			if (scheduler == null
@@ -95,6 +95,21 @@ public class BalanceAction extends ActionSupport
 	public void setFlag(int flag)
 	{
 		this.flag = flag;
+	}
+
+	public void closePush(){
+		try {
+			if (scheduler != null && scheduler.isStarted())
+			{
+				// System.out.println("fence stop");
+				scheduler.clear();
+				scheduler.shutdown();
+				scheduler = null;
+			}
+		}catch (Exception e)
+		{
+			e.printStackTrace();
+		}
 	}
 
 }
