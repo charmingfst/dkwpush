@@ -54,15 +54,8 @@ public class BalanceAction extends ActionSupport
 				scheduler.start();
 			}
 		}
-		if (flag == 2)
-		{
-			if (scheduler != null && scheduler.isStarted())
-			{
-				// System.out.println("balance stop");
-				scheduler.clear();
-				scheduler.shutdown();
-				scheduler = null;
-			}
+		if (flag == 2) {
+			closePush();
 		}
 		if(flag == 3)
 		{
