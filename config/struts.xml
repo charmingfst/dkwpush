@@ -22,7 +22,7 @@
 		<action name="loginaction" class="loginaction">
 		</action>
 		<action name="fangcpush" class="fangcaction"></action>
-		<action name="otherpush" class="otheraction"></action>
+		<action name="otherpush" class="otherpush"></action>
 		<action name="chargepush" class="chargeaction"></action>
 		<action name="lowpush" class="lowaction"></action>
 		<action name="sospush" class="sosaction"></action>

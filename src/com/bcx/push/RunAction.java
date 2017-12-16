@@ -22,7 +22,8 @@ public class RunAction extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
-        if (flag == 1)
+        System.out.println("flag:"+flag);
+        if (flag == 0)
         {
             if (scheduler == null
                     || (scheduler != null && !scheduler.isStarted()))
@@ -91,5 +92,20 @@ public class RunAction extends ActionSupport {
     public void setFlag(int flag)
     {
         this.flag = flag;
+    }
+
+    public void closePush(){
+        try {
+            if (scheduler != null && scheduler.isStarted())
+            {
+                // System.out.println("fence stop");
+                scheduler.clear();
+                scheduler.shutdown();
+                scheduler = null;
+            }
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 }
