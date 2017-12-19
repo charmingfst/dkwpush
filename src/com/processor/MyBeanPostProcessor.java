@@ -9,6 +9,7 @@ import java.lang.reflect.Method;
 
 /**
  * Created by charming on 2017/12/16.
+ * 服务器重启时自动开启推送
  */
 public class MyBeanPostProcessor implements BeanPostProcessor {
     @Override

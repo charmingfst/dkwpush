@@ -66,6 +66,38 @@ public class PushUtils
 //	            LOG.info("Error Message: " + e.getErrorMessage());
 	        }
 	}
+
+	public static void advertPushMessage(String content, String type) {
+
+// For push, all you need do is to build PushPayload object.
+
+		JPushClient jpushClient = new JPushClient(masterSecret, appKey, 3);
+
+		PushPayload payload = buildPushObject_all_user_alert(content, type);
+		try {
+			PushResult result = jpushClient.sendPush(payload);
+		} catch (APIConnectionException e) {
+
+		}catch (APIRequestException e) {
+
+		}
+	}
+
+	private static PushPayload buildPushObject_all_user_alert(String content, String type) {
+		IosNotification iosNotification = IosNotification.newBuilder().setAlert(content).addExtra("title", type).build();
+
+		return PushPayload.newBuilder()
+				.setPlatform(Platform.android_ios())
+				.setAudience(Audience.all())
+				.setNotification(Notification.newBuilder()
+						.addPlatformNotification(iosNotification)
+						.addPlatformNotification(AndroidNotification.newBuilder().addExtra("type", type).setAlert(content).build())
+						.build())
+				.setOptions(Options.newBuilder().setApnsProduction(true).build()) //true为生成环境，false为开发环境
+				.build();
+	}
+
+
 	public static PushPayload buildPushObject_all_all_alert(String username, String content, String type) {
 		
 		

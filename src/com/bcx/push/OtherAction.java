@@ -47,16 +47,15 @@ public class OtherAction extends ActionSupport
 			if ("1".equals(result))
 			{
 				JsonArray jsonArray = jsonRes.get("datas").getAsJsonArray();
-				System.out.println(jsonArray.toString());
 				for (JsonElement jsonEle : jsonArray)
 				{
 					JsonObject jsonObj = jsonEle.getAsJsonObject();
-					String loginName = jsonObj.get("loginname").getAsString();
 					String content = jsonObj.get("content").getAsString();
 					String type = jsonObj.get("type").getAsString();
 					final String id = jsonObj.get("id").getAsString();
 
-					PushUtils.pushMessage(loginName, content, type);
+					PushUtils.advertPushMessage(content, type);
+
 					Future<?> future =  executor.submit(new Runnable(){
 						@Override
 						public void run()
@@ -74,6 +73,7 @@ public class OtherAction extends ActionSupport
 					});
 
 				}
+
 				writer.write("成功");
 			}else if ("0".equals(result)){
 				writer.write("无数据");
@@ -87,6 +87,7 @@ public class OtherAction extends ActionSupport
 		}
 		return null;
 	}
+
 
 
 
